@@ -16,7 +16,7 @@ I went into testing because of the possibility of remote work.
 + **HTML**
 + **CSS**
 + **Git**
-+ **Android**
++ **Gems of war**
 
 ## Code Example
 
@@ -27,6 +27,6 @@ I went into testing because of the possibility of remote work.
 + **Courses**: QA Engineer(Junior)
 
 ## English
- **A1**
+ **A2**
 
 
