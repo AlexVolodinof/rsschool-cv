@@ -16,7 +16,7 @@ I went into testing because of the possibility of remote work.
 + **HTML**
 + **CSS**
 + **Git**
-+ **My SQL**
++ **Android**
 
 ## Code Example
 
