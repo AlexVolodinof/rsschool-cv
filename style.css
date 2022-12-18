@@ -1,19 +1,370 @@
-body{ 
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F5F7FA;
+* {
+   box-sizing: border-box; 
 }
-.about-me-profession {
-    font-size: 14px;
-    font-weight: 700;
-    color: #000; 
-}
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #e5e5e5;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ul {
+    margin: 0;
+  }
+  
+  li {
+    list-style: disc;
+    color: rgb(4, 37, 120);
+    cursor: pointer;
+  }
+  li:hover {
+    color: rgb(1, 3, 10); 
+  }
+
+.site-navigation {
+    display: flex;
+  }
+  
+  .site-navigation__link {
+    margin-left: 32px;
+  }
+  
+  .site-navigation__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text);
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+  .site-navigation__link::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0;
+    right: 0;
+    height: 3px;
+    bottom: 5px;
+    background-color: var(--accent);
+    transition: width ease-in-out 1s;
+  }
+  
+  .site-navigation__link:hover::before {
+    width: 100%;
+    left: 0;
+    background-color: var(--accent);
+    transition: width ease-in-out 1s;
+  }
+  
 .main-container {
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
     background-color: #fff;
     margin: 40px auto;
+    box-shadow: 6px 6px 20 px rgba(0, 0, 0, 0.1);
 }
+
+/* Main content section */
+
+.main-content-section {
+    padding: 100px 90px;
+}
+
+.main-content-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/*About me section */
+
+.about-me-section {
+    margin: 0 0 40px 0;
+}
+
+.about-me-profession {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.about-me-profession {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.about-me-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000;
+    margin: 0 0 25px 0;
+}
+
+.about-me-discription { 
+    width: 400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+/* My projects section */
+
+.my-projects-section {
+    margin: 0 0 50px 0;
+}
+
+.my-projects-list {
+
+    padding: 0 0 0 17px;
+}
+
+.my-projects-item {
+    color: #000;
+    font-weight: bold;
+}
+
+.my-projects-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.my-projects-text {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-left: 5px;
+}
+
+.my-projects-bracket {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+
+/* My work experience section */
+
+.my-work-experience-company {
+    color: #f86d3a;
+}
+
+.my-work-experience-position {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin: 0 0 10px 0;
+}
+
+.my-work-experience-period {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #a8a8a8;
+    margin: 0 0 10px 0;
+}
+
+.my-work-experience-divider {
+    color: #000;
+} 
+
+.my-work-experience-duties {
+    padding: 0 0 0 18px;
+    width: 509px;
+}
+
+.my-work-experience-duty {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.my-work-experience-company-block {
+    margin: 0 15px 0  0;
+}
+
+/* My education section */
+
+.my-education-section {
+    margin: 0 0 45px 0;
+}
+
+.my-education-position {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f86d3a;
+    margin: 0 0 10px 0;
+}
+
+.my-education-specialization {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin: 0 0 10px 0;
+}
+
+.my-education-period {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #a8a8a8;
+    margin: 0 0 10px 0;
+}
+
+.my-education-divider {
+    color: #000;
+}
+
+/* Sidebar section */
+
 .sidebar-section {
     background-color: #1E2939;
+    width: 370px;
+    padding: 40px 0;
+}
+
+.contacts-section,
+.tech-skills-section,
+.soft-skills-section{
+    margin: 50px 0 0 40px;
+}
+.contact-section-type {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-right: 7px;
+    list-style-type: none;
+  }
+  .contact-section-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #a8a8a8;
+    opacity: 0.5;
+  }
+.sidebar-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Contacts section */
+
+.contacts-section-type {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    margin-right: 7px;
+
+}
+
+.contacts-section-link {
+    color: #565E6A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Tech-Soft skills section */
+
+.tech-skills-list,
+.soft-skills-list {
+    padding: 0 0 0 17px;
+}
+
+.tech-skills-items,
+.soft-skills-items {
+    color: #f86d3a;
+}
+
+.tech-skills-items-text,
+.soft-skills-items-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+.main-content-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    background-color: #1e232c;
+  }
+  .footer__github {
+    position: relative;
+    padding-left: 40px;
+  }
+  .footer__github::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/github-logo.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .footer__year {
+    justify-self: center;
+  }
+  .footer__rsschool {
+    justify-self: end;
+    height: 32px;
+  } 
+.site-navigation__item {
+    list-style: none;
 }
